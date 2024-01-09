@@ -290,10 +290,10 @@ body:not(.is-expanded-menu) {
 	<div id="wrapper">
 		<!-- Top Bar
 		============================================= -->
-		<div id="top-bar" class="dark bg-color py-2">
+		<div id="top-bar" class="dark bg-color-acrobat py-2">
 			<div class="container">
 				<div class="d-flex align-items-center justify-content-center flex-column flex-md-row fw-medium text-center">
-					<span><strong class="text-uppercase flash animated infinite slow d-inline-block me-2">Flash Sale</strong> Get Canvas now for <del>$16</del> <strong>$10</strong> only!</span> <a href="https://1.envato.market/c/1309643/480739/4415?u=https%3A%2F%2Fthemeforest.net%2Fcart%2Fconfigure_before_adding%2F9228123" target="_blank" class="btn btn-sm bg-light h-bg-dark text-dark h-text-light ms-md-3 mt-2 mt-md-0 fw-semibold">Buy Now</a>
+					<span><strong class="text-uppercase flash animated infinite slow d-inline-block me-2">ÚLTIMAS VAGAS</strong> Comece a estudar com <del>50%</del> <strong>70%</strong> de desconto!</span> <a href="https://1.envato.market/c/1309643/480739/4415?u=https%3A%2F%2Fthemeforest.net%2Fcart%2Fconfigure_before_adding%2F9228123" target="_blank" class="btn btn-sm bg-light h-bg-dark text-dark h-text-light ms-md-3 mt-2 mt-md-0 fw-semibold">Quero essa bolsa!</a>
 				</div>
 			</div>
 		</div>
@@ -424,7 +424,7 @@ body:not(.is-expanded-menu) {
 													<li class="menu-item">
 														<div class="widget">
 
-															<h4>Our Location</h4>
+															<h4>Nossa Localização</h4>
 
 															<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15353.740277293968!2d-48.0537159!3d-15.8337148!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a332d78d5295f%3A0x894e489ea4be0fd4!2sFaculdade%20Guerra!5e0!3m2!1spt-BR!2sbr!4v1704773280569!5m2!1spt-BR!2sbr" width="600" height="400" allowfullscreen></iframe>
 
@@ -435,43 +435,105 @@ body:not(.is-expanded-menu) {
 													<li class="menu-item">
 														<div class="widget">
 
-															<h4>Send us a Quick Email</h4>
+															<h4>Quer receber descontos exclusivos?</h4>
 
-															<div class="form-widget" data-loader="button">
-																<div class="form-result"></div>
-
-																<form class="row mb-0" name="template-contactform" action="include/form.php" method="post">
-																	<div class="col-md-6 form-group">
-																		<input type="text" name="template-contactform-name" value="" class="form-control required" placeholder="Name">
-																	</div>
-																	<div class="col-md-6 form-group">
-																		<input type="email" name="template-contactform-email" value="" class="required email form-control" placeholder="Email">
-																	</div>
-																	<div class="col-md-6 form-group">
-																		<input type="text" name="subject" value="" class="required form-control" placeholder="Subject">
-																	</div>
-																	<div class="col-md-6 form-group">
-																		<input type="text" name="template-contactform-phone" value="" class="form-control" placeholder="Phone">
-																	</div>
-
-																	<div class="w-100"></div>
-
-																	<div class="col-12 form-group">
-																		<textarea class="required form-control" name="template-contactform-message" rows="3" cols="30" placeholder="Enter your Message"></textarea>
-																	</div>
-
-																	<div class="col-12 form-group d-none">
-																		<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="form-control">
-																	</div>
-
-																	<div class="col-12 form-group">
-																		<button class="button button-3d button-small m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
-																	</div>
-
-																	<input type="hidden" name="prefix" value="template-contactform-">
-
-																</form>
-															</div>
+																													
+															<iframe
+															id="JotFormIFrame-240083401634648"
+															title="snippet Pré-matrícula para novos alunos"
+															onload="window.parent.scrollTo(0,0)"
+															allowtransparency="true"
+															allowfullscreen="true"
+															allow="geolocation; microphone; camera"
+															src="https://form.jotform.com/240083401634648"
+															frameborder="0"
+															style="min-width:100%;max-width:100%;height:539px;border:none;"
+															scrolling="no"
+														>
+														</iframe>
+														<script type="text/javascript">
+														var ifr = document.getElementById("JotFormIFrame-240083401634648");
+														if (ifr) {
+															var src = ifr.src;
+															var iframeParams = [];
+															if (window.location.href && window.location.href.indexOf("?") > -1) {
+															iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+															}
+															if (src && src.indexOf("?") > -1) {
+															iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+															src = src.substr(0, src.indexOf("?"))
+															}
+															iframeParams.push("isIframeEmbed=1");
+															ifr.src = src + "?" + iframeParams.join('&');
+														}
+														window.handleIFrameMessage = function(e) {
+															if (typeof e.data === 'object') { return; }
+															var args = e.data.split(":");
+															if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+															if (!iframe) { return; }
+															switch (args[0]) {
+															case "scrollIntoView":
+																iframe.scrollIntoView();
+																break;
+															case "setHeight":
+																iframe.style.height = args[1] + "px";
+																if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+																iframe.style.minHeight = args[1] + "px";
+																}
+																break;
+															case "collapseErrorPage":
+																if (iframe.clientHeight > window.innerHeight) {
+																iframe.style.height = window.innerHeight + "px";
+																}
+																break;
+															case "reloadPage":
+																window.location.reload();
+																break;
+															case "loadScript":
+																if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+																var src = args[1];
+																if (args.length > 3) {
+																	src = args[1] + ':' + args[2];
+																}
+																var script = document.createElement('script');
+																script.src = src;
+																script.type = 'text/javascript';
+																document.body.appendChild(script);
+																break;
+															case "exitFullscreen":
+																if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+																else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+																else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+																else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+																else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+																break;
+															}
+															var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+															if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+															var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+															iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+															}
+														};
+														window.isPermitted = function(originUrl, whitelisted_domains) {
+															var url = document.createElement('a');
+															url.href = originUrl;
+															var hostname = url.hostname;
+															var result = false;
+															if( typeof hostname !== 'undefined' ) {
+															whitelisted_domains.forEach(function(element) {
+																if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+																	result = true;
+																}
+															});
+															return result;
+															}
+														};
+														if (window.addEventListener) {
+															window.addEventListener("message", handleIFrameMessage, false);
+														} else if (window.attachEvent) {
+															window.attachEvent("onmessage", handleIFrameMessage);
+														}
+														</script>
 
 														</div>
 													</li>
@@ -480,44 +542,32 @@ body:not(.is-expanded-menu) {
 													<li class="menu-item">
 														<div class="widget">
 
-															<h4>Our Headquarters</h4>
+															<h4>Campus Principal</h4>
 
 															<address>
-																<strong>Address:</strong><br>
-																795 Folsom Ave, Suite 600<br>
-																San Francisco, CA 94107<br>
-																Melbourne, Australia<br>
+																<strong>Endereço:</strong><br>
+																Q QSA 7 Lotes 15 a 22<br>
+																Taguatinga Sul<br>
+																Distrito Federal<br>
 															</address>
-															<abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>
-															<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br>
-															<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+															<abbr title="Phone Number"><strong>Telefone:</strong></abbr> (61) 3263-0463<br>
+															<abbr title="Fax"><strong>Wpp:</strong></abbr> (61) 9 8147-2249<br>
+															<abbr title="Email Address"><strong>Email:</strong></abbr> contato@faculdadeguerra.edu.br
 
 															<div class="mb-4"></div>
 
 															<div class="d-flex">
-																<a href="#" class="social-icon si-small text-white bg-facebook" title="Facebook">
+																<a href="https://www.facebook.com/faculdadeguerra/" class="social-icon si-small text-white bg-facebook" title="Facebook">
 																	<i class="fa-brands fa-facebook-f"></i>
 																	<i class="fa-brands fa-facebook-f"></i>
 																</a>
-																<a href="#" class="social-icon si-small text-white bg-twitter" title="Twitter">
+																<a href="https://twitter.com/FaculdadeGuerra" class="social-icon si-small text-white bg-twitter" title="Twitter">
 																	<i class="fa-brands fa-twitter"></i>
 																	<i class="fa-brands fa-twitter"></i>
 																</a>
-																<a href="#" class="social-icon si-small text-white bg-github" title="Github">
-																	<i class="fa-brands fa-github"></i>
-																	<i class="fa-brands fa-github"></i>
-																</a>
-																<a href="#" class="social-icon si-small text-white bg-instagram" title="Instagram">
+																<a href="https://www.instagram.com/faculdade_guerra/" class="social-icon si-small text-white bg-instagram" title="Instagram">
 																	<i class="bi-instagram"></i>
 																	<i class="bi-instagram"></i>
-																</a>
-																<a href="#" class="social-icon si-small text-white bg-flickr" title="Flickr">
-																	<i class="fa-brands fa-flickr"></i>
-																	<i class="fa-brands fa-flickr"></i>
-																</a>
-																<a href="#" class="social-icon si-small text-white bg-skype" title="Skype">
-																	<i class="fa-brands fa-skype"></i>
-																	<i class="fa-brands fa-skype"></i>
 																</a>
 															</div>
 
@@ -529,7 +579,7 @@ body:not(.is-expanded-menu) {
 									</div>
 								</li>
 								<li class="menu-item mega-menu">
-									<a class="menu-link" href="#"><div>Pages</div></a>
+									<a class="menu-link" href="#"><div>Fac Guerra</div></a>
 									<div class="mega-menu-content mega-menu-style-2">
 										<div class="container">
 											<div class="row">
@@ -537,110 +587,152 @@ body:not(.is-expanded-menu) {
 													<li class="menu-item">
 														<div class="widget">
 
-															<iframe src="https://player.vimeo.com/video/136249183" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
+															<iframe width="560" height="315" src="https://www.youtube.com/embed/f1Ph9J1z9As?si=oOky3Iim5KUrtIyS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 														</div>
 													</li>
 												</ul>
 												<ul class="sub-menu-container mega-menu-column col-lg-3">
 													<li class="menu-item mega-menu-title">
-														<a class="menu-link" href="#"><div>Utility &amp; Specials</div></a>
+														<a class="menu-link" href="#"><div>Institucional</div></a>
 														<ul class="sub-menu-container">
 															<li class="menu-item">
-																<a class="menu-link" href="services.html"><div><i class="bi-asterisk"></i>Services Pages</div></a>
+																<a class="menu-link" href="services.html"><div><i class="bi-people-fill"></i>Serviços à comunidade</div></a>
 																<ul class="sub-menu-container mega-menu-dropdown">
 																	<li class="menu-item">
-																		<a class="menu-link" href="services.html"><div>Layout 1</div></a>
+																		<a class="menu-link" href="services.html"><div>CPA - Comissão Própria de Avaliação</div></a>
 																	</li>
 																	<li class="menu-item">
-																		<a class="menu-link" href="services-2.html"><div>Layout 2</div></a>
+																		<a class="menu-link" href="services-2.html"><div>NPJ - Núcleo de Prática Jurídica</div></a>
 																	</li>
 																	<li class="menu-item">
-																		<a class="menu-link" href="services-3.html"><div>Layout 3</div></a>
+																		<a class="menu-link" href="services-3.html"><div>NAP - Núcleo de Atendimento Psicopedagógico</div></a>
+																	</li>
+																	<li class="menu-item">
+																		<a class="menu-link" href="services-3.html"><div>COP - Coordenação Pedagógica</div></a>
 																	</li>
 																</ul>
 															</li>
 															<li class="menu-item">
-																<a class="menu-link" href="#"><div><i class="bi-calendar"></i>Events</div></a>
+																<a class="menu-link" href="#"><div><i class="bi-calendar"></i>Prestação de Serviços</div></a>
 																<ul class="sub-menu-container mega-menu-dropdown">
 																	<li class="menu-item">
-																		<a class="menu-link" href="events-list.html"><div>Events List</div></a>
+																		<a class="menu-link" href="events-list.html"><div>Pesquisa</div></a>
 																		<ul class="sub-menu-container mega-menu-dropdown">
 																			<li class="menu-item">
-																				<a class="menu-link" href="events-list.html"><div>Right Sidebar</div></a>
+																				<a class="menu-link" href="events-list.html"><div>Câmara de Pesq. e Iniciação Científica</div></a>
 																			</li>
 																			<li class="menu-item">
-																				<a class="menu-link" href="events-list-left-sidebar.html"><div>Left Sidebar</div></a>
+																				<a class="menu-link" href="events-list-left-sidebar.html"><div>Revista Acadêmica</div></a>
 																			</li>
 																			<li class="menu-item">
-																				<a class="menu-link" href="events-list-both-sidebar.html"><div>Both Sidebar</div></a>
+																				<a class="menu-link" href="events-list-both-sidebar.html"><div>Iniciação Científica</div></a>
 																			</li>
 																			<li class="menu-item">
-																				<a class="menu-link" href="events-list-fullwidth.html"><div>Full Width</div></a>
+																				<a class="menu-link" href="events-list-fullwidth.html"><div>Feiras e Eventos</div></a>
 																			</li>
 																			<li class="menu-item">
-																				<a class="menu-link" href="events-list-parallax.html"><div>Parallax List</div></a>
+																				<a class="menu-link" href="events-list-parallax.html"><div>Saídas de Campo</div></a>
 																			</li>
 																		</ul>
 																	</li>
 																	<li class="menu-item">
-																		<a class="menu-link" href="event-single.html"><div>Single Event</div></a>
+																		<a class="menu-link" href="event-single.html"><div>Ensino</div></a>
 																		<ul class="sub-menu-container mega-menu-dropdown">
 																			<li class="menu-item">
-																				<a class="menu-link" href="event-single-right-sidebar.html"><div>Right Sidebar</div></a>
+																				<a class="menu-link" href="event-single-right-sidebar.html"><div>Corpo Docente</div></a>
 																			</li>
 																			<li class="menu-item">
-																				<a class="menu-link" href="event-single-left-sidebar.html"><div>Left Sidebar</div></a>
+																				<a class="menu-link" href="event-single-left-sidebar.html"><div>Coordenação</div></a>
 																			</li>
 																			<li class="menu-item">
-																				<a class="menu-link" href="event-single-both-sidebar.html"><div>Both Sidebar</div></a>
+																				<a class="menu-link" href="event-single-both-sidebar.html"><div>Ensino Presencial</div></a>
 																			</li>
 																			<li class="menu-item">
-																				<a class="menu-link" href="event-single.html"><div>Full Width</div></a>
+																				<a class="menu-link" href="event-single.html"><div>EAD</div></a>
 																			</li>
 																		</ul>
 																	</li>
 																	<li class="menu-item">
-																		<a class="menu-link" href="event-single-full-width-image.html"><div>Single Event - Full</div></a>
+																		<a class="menu-link" href="event-single-full-width-image.html"><div>Extensão</div></a>
 																		<ul class="sub-menu-container mega-menu-dropdown">
 																			<li class="menu-item">
-																				<a class="menu-link" href="event-single-full-width-image.html"><div>Parallax Image</div></a>
+																				<a class="menu-link" href="event-single-full-width-image.html"><div>Atendimento à comunidade</div></a>
 																			</li>
 																			<li class="menu-item">
-																				<a class="menu-link" href="event-single-full-width-map.html"><div>Google Map</div></a>
+																				<a class="menu-link" href="event-single-full-width-map.html"><div>Ações Sociais</div></a>
 																			</li>
 																			<li class="menu-item">
-																				<a class="menu-link" href="event-single-full-width-slider.html"><div>Slider Gallery</div></a>
+																				<a class="menu-link" href="event-single-full-width-slider.html"><div>Atividades de Extensão</div></a>
 																			</li>
 																			<li class="menu-item">
-																				<a class="menu-link" href="event-single-full-width-video.html"><div>HTML5 Video</div></a>
+																				<a class="menu-link" href="event-single-full-width-video.html"><div>Convênio SIAPE-DF</div></a>
 																			</li>
 																		</ul>
 																	</li>
 																	<li class="menu-item">
-																		<a class="menu-link" href="events-calendar.html"><div>Full Width Calendar</div></a>
+																		<a class="menu-link" href="events-calendar.html"><div>Convênios</div></a>
 																	</li>
 																</ul>
 															</li>
 															<li class="menu-item">
-																<a class="menu-link" href="faqs.html"><div><i class="bi-question-circle"></i>FAQs Pages</div></a>
+																<a class="menu-link" href="faqs.html"><div><i class="bi-book-half"></i>Documentos</div></a>
 																<ul class="sub-menu-container mega-menu-dropdown">
 																	<li class="menu-item">
-																		<a class="menu-link" href="faqs.html"><div>Layout 1</div></a>
+																		<a class="menu-link" href="faqs.html"><div>Plano de Desenvolvimento Institucional</div></a>
 																	</li>
 																	<li class="menu-item">
-																		<a class="menu-link" href="faqs-2.html"><div>Layout 2</div></a>
+																		<a class="menu-link" href="faqs-2.html"><div>Projeto Pedagógico Institucional</div></a>
 																	</li>
 																	<li class="menu-item">
-																		<a class="menu-link" href="faqs-3.html"><div>Layout 3</div></a>
+																		<a class="menu-link" href="faqs-3.html"><div>Manual do Aluno</div></a>
 																	</li>
 																	<li class="menu-item">
-																		<a class="menu-link" href="faqs-4.html"><div>Layout 4</div></a>
+																		<a class="menu-link" href="faqs-4.html"><div>Regimento Interno</div></a>
 																	</li>
 																</ul>
 															</li>
 															<li class="menu-item">
-																<a class="menu-link" href="index-rtl.html"><div><i class="bi-translate"></i>RTL Template</div></a>
+																<a class="menu-link" href="index-rtl.html"><div><i class="bi-person-badge"></i>Nossa Equipe</div></a>
+															</li>
+															<li class="menu-item">
+																<a class="menu-link" href="index-rtl.html"><div><i class="bi-calendar"></i>Calendário Acadêmico</div></a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+												<ul class="sub-menu-container mega-menu-column col-lg-3">
+													<li class="menu-item mega-menu-title">
+														<a class="menu-link" href="#"><div>Aluno Guerra</div></a>
+														<ul class="sub-menu-container">
+															<li class="menu-item">
+																<a class="menu-link" href="services.html"><div><i class="bi-link"></i>Links Importantes</div></a>
+																<ul class="sub-menu-container mega-menu-dropdown">
+																	<li class="menu-item">
+																		<a class="menu-link" href="services.html"><div>Ambiente Virtual de Aprendizagem</div></a>
+																	</li>
+																	<li class="menu-item">
+																		<a class="menu-link" href="services-2.html"><div>Portal Acadêmico Cerbrum</div></a>
+																	</li>
+																	<li class="menu-item">
+																		<a class="menu-link" href="services-3.html"><div>Biblioteca Virtual</div></a>
+																	</li>
+																	<li class="menu-item">
+																		<a class="menu-link" href="services-3.html"><div>APP - Minha Faculdade</div></a>
+																	</li>
+																</ul>
+															</li>
+															<li class="menu-item">
+																<a class="menu-link" href="#"><div><i class="bi-camera-video"></i>Ambiente Virtual de Aprendizagem</div></a>
+																
+															</li>
+															<li class="menu-item">
+																<a class="menu-link" href="#"><div><i class="bi-journal-bookmark-fill"></i>Biblioteca Virtual</div></a>
+															</li>
+															<li class="menu-item">
+																<a class="menu-link" href="#"><div><i class="bi-backpack"></i>Portal Acadêmico Cerbrum</div></a>
+															</li>
+															<li class="menu-item">
+																<a class="menu-link" href="index-rtl.html"><div><i class="bi-aspect-ratio"></i>Comunicados Importantes</div></a>
 															</li>
 														</ul>
 													</li>
@@ -648,30 +740,23 @@ body:not(.is-expanded-menu) {
 												<ul class="sub-menu-container mega-menu-column col-lg-3">
 													<li class="menu-item">
 														<div class="widget">
-															<h5 class="text-uppercase ls-1">Fully Widgetized Mega Menus</h5>
-															<p class="lead mb-0">Ability to add Multiple Mixed Columns and Variable Content. Add any Shortcode or Component.</p>
-														</div>
-													</li>
-												</ul>
-												<ul class="sub-menu-container mega-menu-column col-lg-3">
-													<li class="menu-item">
-														<div class="widget">
+															<h4>Acesso Restrito</h4>
 
 															<form id="login-form" name="login-form" class="row mb-0" action="#" method="post">
 																<div class="col-12 form-group">
-																	<label for="login-form-username">Username or Email:</label>
+																	<label for="login-form-username">Usuário:</label>
 																	<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control">
 																</div>
 
 																<div class="col-12 form-group">
-																	<label for="login-form-password">Password:</label>
+																	<label for="login-form-password">Senha:</label>
 																	<input type="password" id="login-form-password" name="login-form-password" value="" class="form-control">
 																</div>
 
 																<div class="col-12 form-group">
 																	<div class="d-flex justify-content-between">
-																		<button class="btn btn-dark" id="login-form-submit" name="login-form-submit" value="login">Login</button>
-																		<a href="#">Forgot Password?</a>
+																		<button class="btn btn-dark" id="login-form-submit" name="login-form-submit" value="login">Entrar</button>
+																		<a href="#">Esqueceu a senha?</a>
 																	</div>
 																</div>
 															</form>
