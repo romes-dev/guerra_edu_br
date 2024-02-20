@@ -249,22 +249,34 @@ body:not(.is-expanded-menu) {
 	margin-bottom: 5px;
 }
 
-.rounded-box {
-    border-radius: 15px;
-    border: 1px solid #ccc;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
     position: fixed;
-    right: 20px;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     transition: top 0.3s ease;
-    max-width: 300px;
+    max-width: 800px;
+}
+.text {
+    width: 40%;
+}
+.box {
+    width: 50%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
 }
 .button {
-    display: inline-block;
+    display: block;
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    text-align: center;
 }
