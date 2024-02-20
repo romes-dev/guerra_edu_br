@@ -253,3 +253,8 @@ body:not(.is-expanded-menu) {
     border-radius: 15px;
     margin-bottom: 20px;
 }
+.rounded-box {
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
