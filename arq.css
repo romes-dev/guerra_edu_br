@@ -248,3 +248,8 @@ body:not(.is-expanded-menu) {
 	font-size: 14px;
 	margin-bottom: 5px;
 }
+
+.card {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
