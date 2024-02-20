@@ -58,48 +58,42 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="rounded-box">
-                        <h2>Texto ao lado do acordeão</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet nisl eget mi consequat, vel sollicitudin risus fermentum.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="heading1">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                        Sobre o curso
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p>Duração: 10 semestres</p>
-                                    <p>Carga Horária: 4100h</p>
-                                    <p>Formas de ingresso: Transferência, Nota do Enem, Vestibular, Segunda graduação.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="heading2">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                                        Perfil do Egresso
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p>Além da técnica, o profissional formado nos cursos de Direito precisa ser um humanista, ou seja, precisa ser um profissional capaz de situar as necessidades dos indivíduos, da comunidade, ou ainda de parcelas da sociedade, dentro de um quadro de possibilidades e de lutas pela realização de anseios legítimos. Sendo assim, os juristas precisam enxergar o Direito, efetivamente, como um fato social, mas, acima de tudo, como um fato social em transformação.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p><strong>Texto ao lado da caixa:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet nisl eget mi consequat, vel sollicitudin risus fermentum.</p>
                 </div>
             </div>
         </div>
+        <div class="rounded-box" id="info-box">
+            <h2>Desconto Selecionado:</h2>
+            <p><strong>Graduação Social</strong></p>
+            <p>Últimas vagas com este preço</p>
+            <p>De R$ 249,90/mês por a partir de R$ 94,90/mês</p>
+            <p>Preço fixo durante todo o período letivo, desde que o discente não se torne inadimplente e/ou tranque o curso.</p>
+            <p><strong>Início imediato</strong></p>
+            <p>Professores mestres e doutores</p>
+            <p>Duração de 5 semestres</p>
+            <p>Autorizado pelo MEC</p>
+            <p>EaD</p>
+            <p>Teste por 30 dias</p>
     
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <h3>Descontos:</h3>
+            <p><strong>Desconto Social</strong></p>
+            <p><strong>Desconto Mulher</strong></p>
+    
+            <p><strong>Graduação Social</strong></p>
+            <p>6x de R$ 94,90 (64% de desconto)</p>
+            <p>Para ter este desconto, você precisa ter renda familiar de até 3 salários mínimos OU estar em situação de desemprego OU ter recebido auxílio emergencial. Ver regulamento</p>
+            
+            <a href="#" class="button">Fazer inscrição</a>
+            <p>Atenção: Caso seja menor de idade, é necessário que seu responsável legal realize o processo de matrícula junto a você, sob pena de nulidade da inscrição.</p>
+        </div>
+    
+        <script>
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("info-box").style.top = "20px";
+                } else {
+                    document.getElementById("info-box").style.top = "50%";
+                }
+            }

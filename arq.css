@@ -249,12 +249,22 @@ body:not(.is-expanded-menu) {
 	margin-bottom: 5px;
 }
 
-.card {
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
 .rounded-box {
     border-radius: 15px;
     border: 1px solid #ccc;
     padding: 20px;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: top 0.3s ease;
+    max-width: 300px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
