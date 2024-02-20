@@ -263,20 +263,30 @@ body:not(.is-expanded-menu) {
 }
 .text {
     width: 40%;
-}
-.box {
-    width: 50%;
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid #ccc;
-}
-.button {
-    display: block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-}
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .text-column {
+        width: 45%;
+    }
+    .info-column {
+        width: 50%;
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid #ccc;
+    }
+    .button {
+        display: block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+    }
