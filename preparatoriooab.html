@@ -427,3 +427,500 @@ margin-bottom: 5px;
                                                     <div class="widget">
 
                                                         <h4>Quer receber descontos exclusivos?</h4>
+                                                        <iframe
+                                                        id="JotFormIFrame-240083401634648"
+                                                        title="snippet Pré-matrícula para novos alunos"
+                                                        onload="window.parent.scrollTo(0,0)"
+                                                        allowtransparency="true"
+                                                        allowfullscreen="true"
+                                                        allow="geolocation; microphone; camera"
+                                                        src="https://form.jotform.com/240083401634648"
+                                                        frameborder="0"
+                                                        style="min-width:100%;max-width:100%;height:539px;border:none;"
+                                                        scrolling="no"
+                                                    >
+                                                    </iframe>
+                                                    <script type="text/javascript">
+                                                    var ifr = document.getElementById("JotFormIFrame-240083401634648");
+                                                    if (ifr) {
+                                                        var src = ifr.src;
+                                                        var iframeParams = [];
+                                                        if (window.location.href && window.location.href.indexOf("?") > -1) {
+                                                        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+                                                        }
+                                                        if (src && src.indexOf("?") > -1) {
+                                                        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+                                                        src = src.substr(0, src.indexOf("?"))
+                                                        }
+                                                        iframeParams.push("isIframeEmbed=1");
+                                                        ifr.src = src + "?" + iframeParams.join('&');
+                                                    }
+                                                    window.handleIFrameMessage = function(e) {
+                                                        if (typeof e.data === 'object') { return; }
+                                                        var args = e.data.split(":");
+                                                        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+                                                        if (!iframe) { return; }
+                                                        switch (args[0]) {
+                                                        case "scrollIntoView":
+                                                            iframe.scrollIntoView();
+                                                            break;
+                                                        case "setHeight":
+                                                            iframe.style.height = args[1] + "px";
+                                                            if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+                                                            iframe.style.minHeight = args[1] + "px";
+                                                            }
+                                                            break;
+                                                        case "collapseErrorPage":
+                                                            if (iframe.clientHeight > window.innerHeight) {
+                                                            iframe.style.height = window.innerHeight + "px";
+                                                            }
+                                                            break;
+                                                        case "reloadPage":
+                                                            window.location.reload();
+                                                            break;
+                                                        case "loadScript":
+                                                            if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+                                                            var src = args[1];
+                                                            if (args.length > 3) {
+                                                                src = args[1] + ':' + args[2];
+                                                            }
+                                                            var script = document.createElement('script');
+                                                            script.src = src;
+                                                            script.type = 'text/javascript';
+                                                            document.body.appendChild(script);
+                                                            break;
+                                                        case "exitFullscreen":
+                                                            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+                                                            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+                                                            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+                                                            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+                                                            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+                                                            break;
+                                                        }
+                                                        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+                                                        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+                                                        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+                                                        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+                                                        }
+                                                    };
+                                                    window.isPermitted = function(originUrl, whitelisted_domains) {
+                                                        var url = document.createElement('a');
+                                                        url.href = originUrl;
+                                                        var hostname = url.hostname;
+                                                        var result = false;
+                                                        if( typeof hostname !== 'undefined' ) {
+                                                        whitelisted_domains.forEach(function(element) {
+                                                            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                                                                result = true;
+                                                            }
+                                                        });
+                                                        return result;
+                                                        }
+                                                    };
+                                                    if (window.addEventListener) {
+                                                        window.addEventListener("message", handleIFrameMessage, false);
+                                                    } else if (window.attachEvent) {
+                                                        window.attachEvent("onmessage", handleIFrameMessage);
+                                                    }
+                                                    </script>
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-menu-container mega-menu-column col-lg-3">
+                                                <li class="menu-item">
+                                                    <div class="widget">
+
+                                                        <h4>Campus Principal</h4>
+
+                                                        <address>
+                                                            <strong>Endereço:</strong><br>
+                                                            Q QSA 7 Lotes 15 a 22<br>
+                                                            Taguatinga Sul<br>
+                                                            Distrito Federal<br>
+                                                        </address>
+                                                        <abbr title="Phone Number"><strong>Telefone:</strong></abbr> (61) 3263-0463<br>
+                                                        <abbr title="Fax"><strong>Wpp:</strong></abbr> (61) 9 8147-2249<br>
+                                                        <abbr title="Email Address"><strong>Email:</strong></abbr> contato@faculdadeguerra.edu.br
+
+                                                        <div class="mb-4"></div>
+
+                                                        <div class="d-flex">
+                                                            <a href="https://www.facebook.com/faculdadeguerra/" class="social-icon si-small text-white bg-facebook" title="Facebook">
+                                                                <i class="fa-brands fa-facebook-f"></i>
+                                                                <i class="fa-brands fa-facebook-f"></i>
+                                                            </a>
+                                                            <a href="https://twitter.com/FaculdadeGuerra" class="social-icon si-small text-white bg-twitter" title="Twitter">
+                                                                <i class="fa-brands fa-twitter"></i>
+                                                                <i class="fa-brands fa-twitter"></i>
+                                                            </a>
+                                                            <a href="https://www.instagram.com/faculdade_guerra/" class="social-icon si-small text-white bg-instagram" title="Instagram">
+                                                                <i class="bi-instagram"></i>
+                                                                <i class="bi-instagram"></i>
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item mega-menu">
+                                <a class="menu-link" href="#"><div>Fac Guerra</div></a>
+                                <div class="mega-menu-content mega-menu-style-2">
+                                    <div class="container">
+                                        <div class="row">
+                                            <ul class="sub-menu-container mega-menu-column col-lg-3">
+                                                <li class="menu-item">
+                                                    <div class="widget">
+
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/f1Ph9J1z9As?si=oOky3Iim5KUrtIyS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-menu-container mega-menu-column col-lg-3">
+                                                <li class="menu-item mega-menu-title">
+                                                    <a class="menu-link" href="#"><div>Institucional</div></a>
+                                                    <ul class="sub-menu-container">
+                                                        <li class="menu-item">
+                                                            <a class="menu-link" href="#"><div><i class="bi-people-fill"></i>Serviços à comunidade</div></a>
+                                                              <ul class="sub-menu-container mega-menu-dropdown">
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>CPA - Comissão Própria de Avaliação</div></a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>NPJ - Núcleo de Prática Jurídica</div></a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>NAP - Núcleo de Atendimento Psicopedagógico</div></a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>COP - Coordenação Pedagógica</div></a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="menu-link" href="#"><div><i class="bi-calendar"></i>Prestação de Serviços</div></a>
+                                                            <ul class="sub-menu-container mega-menu-dropdown">
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>Pesquisa</div></a>
+                                                                    <ul class="sub-menu-container mega-menu-dropdown">
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>Câmara de Pesq. e Iniciação Científica</div></a>
+                                                                        </li>
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>Revista Acadêmica</div></a>
+                                                                        </li>
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>Iniciação Científica</div></a>
+                                                                        </li>
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>Feiras e Eventos</div></a>
+                                                                        </li>
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>Saídas de Campo</div></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>Ensino</div></a>
+                                                                    <ul class="sub-menu-container mega-menu-dropdown">
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#niche-demos-grid"><div>Corpo Docente</div></a>
+                                                                        </li>
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>Coordenação</div></a>
+                                                                        </li>
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>Ensino Presencial</div></a>
+                                                                        </li>
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>EAD</div></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>Extensão</div></a>
+                                                                    <ul class="sub-menu-container mega-menu-dropdown">
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>Atendimento à comunidade</div></a>
+                                                                        </li>
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>Ações Sociais</div></a>
+                                                                        </li>
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>Atividades de Extensão</div></a>
+                                                                        </li>
+                                                                        <li class="menu-item">
+                                                                            <a class="menu-link" href="#"><div>Convênio SIAPE-DF</div></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>Convênios</div></a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="menu-link" href="#"><div><i class="bi-book-half"></i>Documentos</div></a>
+                                                            <ul class="sub-menu-container mega-menu-dropdown">
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>Plano de Desenvolvimento Institucional</div></a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>Projeto Pedagógico Institucional</div></a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>Manual do Aluno</div></a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>Regimento Interno</div></a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="menu-link" href="#niche-demos-grid"><div><i class="bi-person-badge"></i>Nossa Equipe</div></a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="menu-link" href="#"><div><i class="bi-calendar"></i>Calendário Acadêmico</div></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-menu-container mega-menu-column col-lg-3">
+                                                <li class="menu-item mega-menu-title">
+                                                    <a class="menu-link" href="#"><div>Aluno Guerra</div></a>
+                                                    <ul class="sub-menu-container">
+                                                        <li class="menu-item">
+                                                            <a class="menu-link" href="#"><div><i class="bi-link"></i>Links Importantes</div></a>
+                                                            <ul class="sub-menu-container mega-menu-dropdown">
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="https://faculdadeguerra.com.br"><div>Ambiente Virtual de Aprendizagem</div></a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="http://usercerbrum.net"><div>Portal Acadêmico Cerbrum</div></a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>Biblioteca Virtual</div></a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="menu-link" href="#"><div>APP - Minha Faculdade</div></a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="menu-link" href="#"><div><i class="bi-camera-video"></i>Ambiente Virtual de Aprendizagem</div></a>
+                                                            
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="menu-link" href="#"><div><i class="bi-journal-bookmark-fill"></i>Biblioteca Virtual</div></a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="menu-link" href="#"><div><i class="bi-backpack"></i>Portal Acadêmico Cerbrum</div></a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="menu-link" href="#"><div><i class="bi-aspect-ratio"></i>Comunicados Importantes</div></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="sub-menu-container mega-menu-column col-lg-3">
+                                                <li class="menu-item">
+                                                    <div class="widget">
+                                                        <h4>Acesso Restrito</h4>
+
+                                                        <form id="login-form" name="login-form" class="row mb-0" action="#" method="post">
+                                                            <div class="col-12 form-group">
+                                                                <label for="login-form-username">Usuário:</label>
+                                                                <input type="text" id="login-form-username" name="login-form-username" value="" class="form-control">
+                                                            </div>
+
+                                                            <div class="col-12 form-group">
+                                                                <label for="login-form-password">Senha:</label>
+                                                                <input type="password" id="login-form-password" name="login-form-password" value="" class="form-control">
+                                                            </div>
+
+                                                            <div class="col-12 form-group">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <button class="btn btn-dark" id="login-form-submit" name="login-form-submit" value="login">Entrar</button>
+                                                                    <a href="#">Esqueceu a senha?</a>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item mega-menu">
+                                <a class="menu-link" href="/bolsas/" target="_blank"><div>Bolsas</div></a>
+                                <div class="mega-menu-content mega-menu-style-2">
+                                    <div class="container">
+                                        <div class="row">
+                                            <ul class="sub-menu-container mega-menu-column col-12">
+                                                <li class="menu-item">
+                                                    <div class="widget">
+
+                                                        <!-- Portfolio Items
+                                                        ============================================= -->
+                                                        <div id="portfolio" class="portfolio row gutter-20">
+
+                                                            <article class="portfolio-item col-lg-1-5 col-md-4 col-sm-6 col-12 pf-media pf-icons">
+                                                                <div class="grid-inner">
+                                                                    <div class="portfolio-image">
+                                                                        <a href="portfolio-single.html">
+                                                                            <img src="images/bolsas/2.png" alt="Open Imagination">
+                                                                        </a>
+                                                                        <div class="bg-overlay">
+                                                                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                                                                                <a href="images/bolsas/2.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+                                                                                <a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="uil uil-ellipsis-h"></i></a>
+                                                                            </div>
+                                                                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="portfolio-desc">
+                                                                        <h3><a href="portfolio-single.html">Direito</a></h3>
+                                                                        <span class="color-acrobat"><a href="#">70% OFF</a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+
+                                                            <article class="portfolio-item col-lg-1-5 col-md-4 col-sm-6 col-12 pf-illustrations">
+                                                                <div class="grid-inner">
+                                                                    <div class="portfolio-image">
+                                                                        <a href="portfolio-single.html">
+                                                                            <img src="images/bolsas/1.png" alt="Locked Steel Gate">
+                                                                        </a>
+                                                                        <div class="bg-overlay">
+                                                                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                                                                                <a href="images/bolsas/1.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+                                                                                <a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="uil uil-ellipsis-h"></i></a>
+                                                                            </div>
+                                                                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="portfolio-desc">
+                                                                        <h3><a href="portfolio-single.html">Seg. Pública<small class="rounded-2 bg-contrast-200 ms-2 fw-medium ls-0 color" style="font-size: 11px; vertical-align: top; padding: 1px 6px;">EAD</small></a></h3>
+                                                                        <span><a href="#">50% OFF</a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+
+                                                            <article class="portfolio-item col-lg-1-5 col-md-4 col-sm-6 col-12 pf-graphics pf-uielements">
+                                                                <div class="grid-inner">
+                                                                    <div class="portfolio-image">
+                                                                        <a href="#">
+                                                                            <img src="images/bolsas/3.png" alt="Mac Sunglasses">
+                                                                        </a>
+                                                                        <div class="bg-overlay">
+                                                                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                                                                                <a href="https://vimeo.com/89396394" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="uil uil-play"></i></a>
+                                                                                <a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="uil uil-ellipsis-h"></i></a>
+                                                                            </div>
+                                                                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="portfolio-desc">
+                                                                        <h3><a href="portfolio-single-video.html">Pós-graduação<small class="rounded-2 bg-contrast-200 ms-2 fw-medium ls-0 color" style="font-size: 11px; vertical-align: top; padding: 1px 6px;">online</small></a></h3>
+                                                                        <span><a href="#">40% OFF</a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+
+                                                            <article class="portfolio-item col-lg-1-5 col-md-4 col-sm-6 col-12 pf-uielements pf-media">
+                                                                <div class="grid-inner">
+                                                                    <div class="portfolio-image">
+                                                                        <a href="portfolio-single.html">
+                                                                            <img src="images/bolsas/1.png" alt="Console Activity">
+                                                                        </a>
+                                                                        <div class="bg-overlay">
+                                                                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                                                                                <a href="images/bolsas/1.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+                                                                                <a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="uil uil-ellipsis-h"></i></a>
+                                                                            </div>
+                                                                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="portfolio-desc">
+                                                                        <h3><a href="portfolio-single.html">Pré OAB</a></h3>
+                                                                        <span><a href="#">Intensivão, 40% OFF</a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+
+                                                            <article class="portfolio-item col-lg-1-5 col-md-4 col-sm-6 col-12 pf-uielements pf-media">
+                                                                <div class="grid-inner">
+                                                                    <div class="portfolio-image">
+                                                                        <a href="portfolio-single.html">
+                                                                            <img src="images/bolsas/1.png" alt="Console Activity">
+                                                                        </a>
+                                                                        <div class="bg-overlay">
+                                                                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                                                                                <a href="images/bolsas/1.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+                                                                                <a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="uil uil-ellipsis-h"></i></a>
+                                                                            </div>
+                                                                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="portfolio-desc">
+                                                                        <h3><a href="portfolio-single.html">Curso de Extensão</a></h3>
+                                                                        <span><a href="#">20% OFF</a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+
+                                                        </div>
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            
+                            <li class="menu-item">
+                                <a class="menu-link" href="shop.html"><div>Professor</div></a>
+                                    <ul class="sub-menu-container">
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="animations.html"><div><i class="bi-display"></i>Portal do professor</div></a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="buttons.html"><div><i class="bi-mailbox-flag"></i>E-mail</div></a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="carousel.html"><div><i class="bi-arrow-left-right"></i>Portal AVA</div></a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="charts.html"><div><i class="bi-graph-up-arrow"></i>Relatórios</div></a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="component-datatable.html"><div><i class="bi-table"></i>Calendário</div></a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="component-uploads.html"><div><i class="bi-upload"></i>Trabalhe conosco</div></a>
+                                                </li>
+                                                
+                                            </ul>
+                            </li>                                
+                    </nav><!-- #primary-menu end -->
+
+                    <form class="top-search-form" action="search.html" method="get">
+                        <input type="text" name="q" class="form-control" value="" placeholder="Digite &amp; tecle Enter.." autocomplete="off">
+                    </form>
+                    <!-- button to subscribe
+                    <a href="#" class="button button-small button-rounded button-light button-circle subscribe-button m-0 d-none d-lg-inline-block">
+                        <i class="bi bi-bell"></i> INSCREVER-SE
+                      </a>
+                       -->
+
+                </div>
+            </div>
+        </div>
