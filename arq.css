@@ -213,7 +213,7 @@ body:not(.is-expanded-menu) {
 	-ms-flex-positive: 1;
 	flex-grow: 1;
 	margin-left: 15px;
-	margin-top: -1px;
+	margin-top: 0px;
 	-ms-transform: translate( 25%, -1px );
 	transform: translate( 25%, -1px );
 	background: linear-gradient(to right,transparent 10%,#4772d9 50%);
