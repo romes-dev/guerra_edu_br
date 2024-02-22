@@ -61,21 +61,22 @@
 }
 
 .section-blocks-imgs img:nth-child(1) {
-	width: 100%;
-	max-width: 840px;
-	height: auto;
-	margin-left: 0;
+    width: 100%;
+    max-width: 840px;
+    height: auto;
+    margin-left: 0; /* Ajuste a margem esquerda para 0 */
 }
 
 .section-blocks-imgs img:nth-child(2) {
-	display: none;
-	position: absolute;
-	width: 480px;
-	right: 0;
-	bottom: -10px;
-	border: 4px solid #FFF;
-	margin-right: 0;
+    display: none;
+    position: absolute;
+    width: 480px;
+    right: 0;
+    bottom: -10px;
+    border: 4px solid #FFF;
+    margin-right: 0; /* Ajuste a margem direita para 0 */
 }
+
 
 @media (min-width: 1200px) {
 	#section-blocks {
