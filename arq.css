@@ -251,3 +251,7 @@ body:not(.is-expanded-menu) {
 	margin-bottom: 5px;
 }
 
+.accordion-item {
+	max-width: 800px;
+	margin: 0 auto;
+}
