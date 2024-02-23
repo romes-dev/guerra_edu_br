@@ -260,3 +260,12 @@ body:not(.is-expanded-menu) {
 	max-width: 600px; /* Defina o tamanho desejado */
 	margin: 0 auto; /* Centraliza horizontalmente */
 }
+.custom-accordion-container {
+	display: flex;
+	justify-content: center;
+}
+
+.custom-accordion {
+	max-width: 800px;
+	width: 100%;
+}
