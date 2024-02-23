@@ -260,3 +260,40 @@ body:not(.is-expanded-menu) {
 	max-width: 600px; /* Defina o tamanho desejado */
 	margin: 0 auto; /* Centraliza horizontalmente */
 }
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f0f0f0;
+}
+
+.accordion {
+	max-width: 600px;
+	width: 100%;
+}
+
+.accordion-item {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.accordion-header {
+	background-color: #f9f9f9;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.accordion-content {
+	display: none;
+	padding: 10px;
+}
+
+.accordion-item.active .accordion-content {
+	display: block;
+}
