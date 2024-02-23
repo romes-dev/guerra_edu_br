@@ -255,3 +255,8 @@ body:not(.is-expanded-menu) {
 	max-width: 800px;
 	margin: 0 auto;
 }
+
+.custom-accordion-item {
+	max-width: 600px; /* Defina o tamanho desejado */
+	margin: 0 auto; /* Centraliza horizontalmente */
+}
