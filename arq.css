@@ -65,6 +65,7 @@
     max-width: 840px;
     height: auto;
     margin-left: 0; /* Ajuste a margem esquerda para 0 */
+	margin: 10 10 10 10;
 }
 
 .section-blocks-imgs img:nth-child(2) {
@@ -74,7 +75,8 @@
     right: 0;
     bottom: -10px;
     border: 4px solid #FFF;
-    margin-right: 10 10 10 10; /* Remova esta linha para permitir a rolagem horizontal */
+    margin-right: 0; /* Remova esta linha para permitir a rolagem horizontal */
+	margin: 10 10 10 10;
 }
 
 
