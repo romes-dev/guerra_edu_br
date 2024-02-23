@@ -74,7 +74,7 @@
     right: 0;
     bottom: -10px;
     border: 4px solid #FFF;
-    margin-right: 0; /* Remova esta linha para permitir a rolagem horizontal */
+    margin-right: 10 10 10 10; /* Remova esta linha para permitir a rolagem horizontal */
 }
 
 
