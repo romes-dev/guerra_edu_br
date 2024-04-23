@@ -264,23 +264,7 @@ body:not(.is-expanded-menu) {
 	margin: 0 auto; /* Centraliza horizontalmente */
 }
 
-/* Reduzir as margens e preenchimentos entre as divs */
-.row .col-lg-8 {
-    margin-bottom: 0; /* Reduz a margem inferior */
-    padding-bottom: 0; /* Reduz o preenchimento inferior */
+#header.transparent-header.dark {
+    background-color: #999; /* substitua #999 pelo código de cor cinza desejado */
 }
 
-.card-group .card {
-    margin-bottom: 0; /* Reduz a margem inferior */
-    padding-bottom: 0; /* Reduz o preenchimento inferior */
-}
-
-/* Reduzir o espaçamento entre as divs dentro da div com a classe card-group */
-.card-group .card {
-    margin-bottom: 0; /* Remover a margem inferior */
-    padding-bottom: 0; /* Remover o preenchimento inferior */
-}
-
-.card-group .card + .card {
-    margin-top: 0; /* Remover a margem superior apenas para cartões subsequentes */
-}
