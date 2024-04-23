@@ -275,3 +275,12 @@ body:not(.is-expanded-menu) {
     padding-bottom: 0; /* Reduz o preenchimento inferior */
 }
 
+/* Reduzir o espaçamento entre as divs dentro da div com a classe card-group */
+.card-group .card {
+    margin-bottom: 0; /* Remover a margem inferior */
+    padding-bottom: 0; /* Remover o preenchimento inferior */
+}
+
+.card-group .card + .card {
+    margin-top: 0; /* Remover a margem superior apenas para cartões subsequentes */
+}
