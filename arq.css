@@ -263,3 +263,15 @@ body:not(.is-expanded-menu) {
 	max-width: 600px; /* Defina o tamanho desejado */
 	margin: 0 auto; /* Centraliza horizontalmente */
 }
+
+/* Reduzir as margens e preenchimentos entre as divs */
+.row .col-lg-8 {
+    margin-bottom: 0; /* Reduz a margem inferior */
+    padding-bottom: 0; /* Reduz o preenchimento inferior */
+}
+
+.card-group .card {
+    margin-bottom: 0; /* Reduz a margem inferior */
+    padding-bottom: 0; /* Reduz o preenchimento inferior */
+}
+
