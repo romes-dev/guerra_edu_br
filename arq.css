@@ -268,3 +268,16 @@ body:not(.is-expanded-menu) {
     background-color: #999; /* substitua #999 pelo código de cor cinza desejado */
 }
 
+.custom-accordion-item {
+	max-width: 600px; /* Defina a largura máxima desejada para os itens do acordeão */
+	margin: 0 auto; /* Centralize os itens do acordeão na página */
+}
+
+.accordion-button {
+	width: 100%; /* Defina a largura total para os botões do acordeão */
+	text-align: left; /* Alinhe o texto dos botões à esquerda */
+}
+
+.accordion-collapse {
+	width: 100%; /* Defina a largura total para o conteúdo do acordeão */
+}
