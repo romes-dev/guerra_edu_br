@@ -33526,3 +33526,33 @@ body.dark {
 .second-div {
   margin-top: 30px; /* Adiciona uma margem superior para pular uma linha */
 }
+
+  /* Estilo para os botões de alternância */
+    .toggle-button {
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-right: 10px;
+        transition: background-color 0.3s;
+    }
+
+    .toggle-button:hover {
+        background-color: #c82333;
+    }
+
+    .active {
+        background-color: #198754;
+    }
+
+    /* Estilo para o conteúdo do card */
+    .card-content {
+        display: none;
+    }
+
+    .card-content.active {
+        display: block;
+    }
