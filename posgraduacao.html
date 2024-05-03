@@ -40,6 +40,8 @@
 	<!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 
 	.custom-accordion-item {
@@ -835,11 +837,13 @@ body:not(.is-expanded-menu) {
 				</div>
 				<div class="header-wrap-clone"></div>
 			</header><!-- #header end -->
+
 			<br>
 
-		<div class="col-lg-7 ps-lg-5 d-flex justify-content-center">
-			<h1 class="titulo">Pós em Direito</h1>
-		</div>
+			<div class="col-lg-7 ps-lg-5 d-flex justify-content-center">
+				<h1 class="titulo" style="font-family: 'Arial', sans-serif; font-size: 2.5rem; color: #333; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid #333; padding-bottom: 10px;">Pós em Direito</h1>
+			</div>
+			
 		<div class="row">
 			<div class="col-lg-8 mx-5">
 				<p><span class="dropcap">A</span>Faculdade Guerra orgulha-se de oferecer uma Pós-Graduação em Direito que se destaca pela excelência acadêmica e pela formação de profissionais altamente capacitados e preparados para os desafios do mercado de trabalho.</p>
@@ -847,6 +851,10 @@ body:not(.is-expanded-menu) {
 				<blockquote class="mt-5 mb-5">
 					<p>Com um corpo docente renomado, formado por especialistas, mestres e doutores atuantes na área jurídica, nossa pós-graduação proporciona uma experiência educacional enriquecedora e atualizada com as demandas da prática jurídica contemporânea.</p>
 				</blockquote>
+
+				<div class="w-80">
+					<p>Nossa abordagem pedagógica integra teoria e prática, incentivando o desenvolvimento de habilidades analíticas, críticas e argumentativas essenciais para o exercício profissional no campo do Direito. Os alunos têm acesso a uma ampla gama de disciplinas eletivas e workshops práticos, permitindo a personalização de sua experiência de aprendizado de acordo com seus interesses e objetivos de carreira.</p>
+				</div>
 		
 				<div class="w-80">
 					<p>Além da qualidade acadêmica, a Faculdade Guerra oferece uma infraestrutura moderna e completa, com biblioteca especializada, salas de aula equipadas e recursos online, garantindo aos nossos alunos o acesso a um ambiente de aprendizado estimulante e propício ao desenvolvimento pessoal e profissional.</p>
@@ -858,102 +866,161 @@ body:not(.is-expanded-menu) {
 			</div>
 		
 			<div class="card text-bg-light mb-3" style="max-width: 20rem;">
-				<div class="card-header text-center"><span><strong class="text-uppercase flash animated infinite slow d-inline-block me-2 ">⭐ÚLTIMAS VAGAS⭐</strong><br> Comece a estudar com <del>20%</del> <strong>40%</strong> de desconto!</span></div>
+				<div class="text-center mb-3">
+					<div class="d-flex justify-content-center">
+						<div class="form-check form-switch me-3">
+							<input class="form-check-input" type="checkbox" id="switchPresencial" onchange="toggleModalidade()">
+							<label class="form-check-label" for="switchPresencial">Presencial</label>
+						</div>
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" id="switchEAD" onchange="toggleModalidade()">
+							<label class="form-check-label" for="switchEAD">EAD</label>
+						</div>
+					</div>
+				</div>
+				<div class="card-header text-center">
+					<span>
+						<strong class="text-uppercase flash animated infinite slow d-inline-block me-2">⭐ÚLTIMAS VAGAS⭐</strong><br> Comece a estudar com <del>20%</del> <strong id="desconto">40%</strong> de desconto!
+					</span>
+				</div>
 				<div class="card-body">
-					<h5 class="card-title text-center">Graduação </h5>
-					<p class="card-text">De <del>800,00/mês</del> por apenas<br><strong><span style="font-size: 1.9em;">500,00/mês</span></strong><br><small style="font-size: 0.6em;">Preço fixo durante todo o período letivo, desde que o discente não se torne inadimplente e/ou tranque o curso.</small></p>
+					<h5 class="card-title text-center" id="curso-titulo">Graduação</h5>
+					<p class="card-text" id="curso-info">De <span id="preco_antigo">800,00/mês</span> por apenas<br><strong><span id="preco_novo" style="font-size: 1.9em;">500,00/mês</span></strong><br><small style="font-size: 0.6em;">Preço fixo durante todo o período letivo, desde que o discente não se torne inadimplente e/ou tranque o curso.</small></p>
 					<br>📆 Inicio Imediato
 					<br>👨‍🏫 Professores mestre e doutores
-					<br>🛜 EAD
+					<br><span id="curso-modalidade">🛜 EAD</span>
 					<br>⌛ Duração de 
 					<br>✔️ Autorizado por
 					<br>
 					<br>
 					<div class="text-center">
 						<a href="https://form.jotform.com/241195390151654" class="button1">Ir para o formulário</a>
-					<br>
-					<br> <strong>Atenção: </strong><small style="font-size: 0.7em;">Caso seja menor de idade, é necessário que seu responsável legal realize o processo de matrícula junto a você, sob pena de nulidade da inscrição.</small> 
+						<br>
+						<br> <strong>Atenção: </strong><small style="font-size: 0.7em;">Caso seja menor de idade, é necessário que seu responsável legal realize o processo de matrícula junto a você, sob pena de nulidade da inscrição.</small> 
 					</div>
 				</div>
-			</div>
-
+			</div>			
+			
 			<br>
-
-			<div class="container">
-				<div class="row justify-content-center align-items-center" style="height: 80%;">
-					<div class="card-group" style="max-width: 40rem;">
-						<div class="card">
-							<img src="images/icons/iconpng.png" class="card-img-top" alt="..." style="width: 50px;">
-							<div class="card-body">
-								<h5 class="card-title">Formas de ingresso</h5>
-								<p class="card-text">Conheça todas as maneiras de entrar para o seu curso dos sonhos na Faculdade Guerra!.</p>
-								<p class="card-text"><small class="text-body-secondary">Saiba mais➙</small></p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="images/icons/iconpng2-removebg-preview.png" class="card-img-top" alt="..." style="width: 50px;">
-							<div class="card-body">
-								<h5 class="card-title">Como funciona</h5>
-								<p class="card-text">Ainda tem dúvidas? Separamos algumas perguntas frequentes que podem te ajudar! Clique para ver nosso FAQ..</p>
-								<p class="card-text"><small class="text-body-secondary">Saiba mais➙</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
+			
+			<div class="section m-0 bg-dark text-center">
+				<h2 class="mb-0 text-light fw-medium">Chegou a hora de fazer a <span class="fw-bold nocolor">DIFERENÇA</span> na sua vida!</h2>
 			</div>
+
+			<p>
+
+		<div class="container">
+    <div class="row justify-content-center align-items-center" style="height: 80%;">
+        <div class="card-group">
+            <div class="card border-0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">🎓 Formas de Ingresso</h5>
+                    <p class="card-text">Conheça todas as maneiras de ingressar no seu curso dos sonhos na Faculdade Guerra!</p>
+                    <a href="#" class="btn btn-primary">Saiba mais ➙</a>
+                </div>
+            </div>
+            <div class="card border-0">
+                <div class="card-body text-center">
+                    <h5 class="card-title">🤔 Como Funciona</h5>
+                    <p class="card-text">Ainda tem dúvidas? Confira nossas perguntas frequentes para obter mais informações!</p>
+                    <a href="#" class="btn btn-primary">Saiba mais ➙</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 			<p></p>
 			<p></p>
 
 			<div class="container col-lg-7 ps-lg-5 d-flex justify-content-center second-div">
-				
-				<h1 class="text-center fs-4">Quer saber mais sobre o nosso curso?</h1>
+				<h1 class="text-center fs-4" style="color: #333; font-family: 'Arial Black', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Quer saber mais sobre o nosso curso?</h1>
 			</div>
 			<div class="container col-lg-7 ps-lg-5 d-flex justify-content-center">
-				<h1 class="text-center fs-4">Dá uma olhadinha nessas perguntas que separamos:</h1>
+				<h1 class="text-center fs-4" style="color: #333; font-family: 'Arial Black', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Dá uma olhadinha nessas perguntas que separamos:</h1>
 			</div>
 			
-			  <div class="accordion" id="accordionExample">
-				<div class="accordion-item custom-accordion-item ">
+			
+			<div class="accordion" id="accordionExample">
+				<div class="accordion-item custom-accordion-item">
 					<h2 class="accordion-header">
-						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 							Qual é a duração típica de um curso de pós-graduação em Direito?
 						</button>
 					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
-							<strong>A duração típica de um curso de pós-graduação em Direito</strong>  varia dependendo do programa e do tipo de pós-graduação. Um LL.M. (Master of Laws) geralmente tem duração de um ano acadêmico, enquanto um mestrado acadêmico em Direito (Mestrado em Direito) pode levar de um a dois anos para ser concluído em tempo integral. No entanto, programas de pós-graduação em Direito podem oferecer opções de estudo em tempo parcial, o que pode prolongar a duração do curso.
+							<strong>A duração típica de um curso de pós-graduação em Direito</strong> varia dependendo do programa e do tipo de pós-graduação. Um LL.M. (Master of Laws) geralmente tem duração de um ano acadêmico, enquanto um mestrado acadêmico em Direito (Mestrado em Direito) pode levar de um a dois anos para ser concluído em tempo integral. No entanto, programas de pós-graduação em Direito podem oferecer opções de estudo em tempo parcial, o que pode prolongar a duração do curso.
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item custom-accordion-item ">
+				<div class="accordion-item custom-accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 							Quais são os benefícios de uma pós-graduação em Direito?
 						</button>
 					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
 							<strong>Uma pós-graduação em Direito </strong> oferece uma série de benefícios, incluindo uma especialização em uma área específica do Direito, oportunidades aprimoradas de carreira, aumento da credibilidade profissional, desenvolvimento de habilidades analíticas e de pesquisa avançadas, networking com outros profissionais da área jurídica e acesso a oportunidades de pesquisa e publicação.
-
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item custom-accordion-item ">
+				<div class="accordion-item custom-accordion-item">
 					<h2 class="accordion-header">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 							Quais são os requisitos de admissão típicos para um programa de pós-graduação em Direito?
 						</button>
 					</h2>
-					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 						<div class="accordion-body">
 							<strong>Os requisitos de admissão podem variar entre</strong> os programas e as instituições, mas geralmente incluem a conclusão de uma graduação em Direito (Bacharel em Direito ou equivalente), um bom desempenho acadêmico durante a graduação, resultados satisfatórios em exames de proficiência em inglês (se o programa for ministrado nesse idioma), cartas de recomendação, declaração de propósito e, em alguns casos, experiência profissional relevante. Algumas instituições podem exigir a realização de exames de admissão específicos ou entrevistas como parte do processo de seleção.
 						</div>
 					</div>
 				</div>
 			</div>
+			
+			
+
+			<p></p>
+			<br>
+
+			<div class="container col-lg-7 ps-lg-5 d-flex justify-content-center second-div">
+				<div class="testimonial-section">
+
+					<h1 class="text-center fs-4" style="color: #e6180d; font-family: 'Arial Black', sans-serif; text-transform: uppercase; letter-spacing: 2px;">Depoimentos de nossos Alunos</h1>
+
+			<p>
+			
+			<div class="testimonial">
+				<img src="images/aluna.jpg" alt="Foto de Maria Silva">
+				<div>
+					<p>"Este curso superou todas as minhas expectativas. Os materiais foram muito bem organizados e o instrutor foi incrivelmente experiente. Definitivamente recomendo!"</p>
+					<p class="author">- Maria Silva</p>
+				</div>
+			</div>
+			
+			<div class="testimonial">
+				<img src="images/cartoon.jpg" alt="Foto de João Oliveira">
+				<div>
+					<p>"Estou muito satisfeito com o aprendizado que obtive neste curso. As atividades práticas foram especialmente úteis e me ajudaram a consolidar meu conhecimento." </p>
+					<p class="author">- João Oliveira</p>
+				</div>
+			</div>
+			
+			<div class="testimonial">
+				<img src="images/aluna2.jpg" alt="Foto de Ana Santos">
+				<div>
+					<p>"Eu sempre quis aprender sobre este assunto, e este curso tornou isso possível. A abordagem prática e os recursos complementares foram fundamentais para meu sucesso." </p>
+					<p class="author">- Ana Santos</p>
+				</div>
+			</div>
+			
 			   <!-- Bootstrap Bundle with Popper -->
    			 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+			 <!-- JavaScript do Bootstrap -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
 			 	<!-- JavaScripts
 	============================================= -->
@@ -1121,5 +1188,42 @@ body:not(.is-expanded-menu) {
 				return false;
 			});
 		});
+
+		function toggleModalidade() {
+			var switchPresencial = document.getElementById("switchPresencial");
+			var switchEAD = document.getElementById("switchEAD");
+			var modalidadeText = document.getElementById("curso-modalidade");
+			var descontoText = document.getElementById("desconto");
+			var precoAntigoText = document.getElementById("preco_antigo");
+			var precoNovoText = document.getElementById("preco_novo");
+		
+			if (switchPresencial.checked && !switchEAD.checked) {
+				modalidadeText.textContent = "👣 Presencial";
+				descontoText.textContent = "50%";
+				precoAntigoText.textContent = "1000,00/mês";
+				precoNovoText.textContent = "500,00/mês";
+			} else if (!switchPresencial.checked && switchEAD.checked) {
+				modalidadeText.textContent = "🛜 EAD";
+				descontoText.textContent = "50%";
+				precoAntigoText.textContent = "800,00/mês";
+				precoNovoText.textContent = "400,00/mês";
+			} else {
+				// Ambos os switches estão marcados ou nenhum está marcado
+				modalidadeText.textContent = "❌ Selecione apenas uma modalidade";
+				descontoText.textContent = "";
+				precoAntigoText.textContent = "";
+				precoNovoText.textContent = "";
+			}
+		}
+		
+		// Event listeners para os switches
+		document.getElementById("switchPresencial").addEventListener("change", toggleModalidade);
+		document.getElementById("switchEAD").addEventListener("change", toggleModalidade);
+		
+		// Marca o switch presencial por padrão ao carregar a página
+		document.getElementById("switchPresencial").checked = true;
+		toggleModalidade(); // Atualiza as informações iniciais
+		
+		
 	</script>
 </body>
