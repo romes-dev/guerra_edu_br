@@ -1,0 +1,74 @@
+<div class="row">
+    <div class="col-lg-6 mx-5">
+        <p><span class="dropcap">A</span> Faculdade Guerra orgulha-se de oferecer uma Pós-Graduação em Direito que se destaca pela excelência acadêmica e pela formação de profissionais altamente capacitados e preparados para os desafios do mercado de trabalho.</p>
+        <blockquote class="mt-5 mb-5">
+            <p>Com um corpo docente renomado, formado por especialistas, mestres e doutores atuantes na área jurídica, nossa pós-graduação proporciona uma experiência educacional enriquecedora e atualizada com as demandas da prática jurídica contemporânea.</p>
+        </blockquote>
+        <div class="w-80">
+            <p>Além da qualidade acadêmica, a Faculdade Guerra oferece uma infraestrutura moderna e completa, com biblioteca especializada, salas de aula equipadas e recursos online, garantindo aos nossos alunos o acesso a um ambiente de aprendizado estimulante e propício ao desenvolvimento pessoal e profissional.</p>
+        </div>
+        <div class="w-80">
+            <p>Ao escolher a Faculdade Guerra para sua pós-graduação em Direito, você estará optando por uma instituição comprometida com a excelência, a ética e a formação de profissionais de destaque no mercado jurídico. Venha fazer parte desta história de sucesso!</p>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div id="card-container">
+            <div class="card text-bg-light mb-3" style="max-width: 20rem;">
+                <div class="text-center">
+                    <button onclick="togglePresencial()">Presencial</button>
+                    <button onclick="toggleEAD()">EAD</button>
+                </div>
+                <div class="card-header text-center">
+                    <span>
+                        <strong class="text-uppercase flash animated infinite slow d-inline-block me-2">⭐ÚLTIMAS VAGAS⭐</strong><br> Comece a estudar com <del>20%</del> <strong>40%</strong> de desconto!
+                    </span>
+                </div>
+                <div class="card-body" id="card-body-presencial">
+                    <h5 class="card-title text-center">Graduação Presencial</h5>
+                    <p class="card-text">De <del>800,00/mês</del> por apenas<br><strong><span style="font-size: 1.9em;">500,00/mês</span></strong><br><small style="font-size: 0.6em;">Preço fixo durante todo o período letivo, desde que o discente não se torne inadimplente e/ou tranque o curso.</small></p>
+                    <br>📆 Inicio Imediato
+                    <br>👨‍🏫 Professores mestre e doutores
+                    <br>⌛ Duração de 
+                    <br>✔️ Autorizado por
+                    <br>
+                    <br>
+                    <div class="text-center">
+                        <a href="https://form.jotform.com/241195390151654" class="button1">Ir para o formulário</a>
+                    </div>
+                    <br>
+                    <br>
+                    <strong>Atenção: </strong><small style="font-size: 0.7em;">Caso seja menor de idade, é necessário que seu responsável legal realize o processo de matrícula junto a você, sob pena de nulidade da inscrição.</small>
+                </div>
+                <div class="card-body" id="card-body-ead" style="display: none;">
+                    <h5 class="card-title text-center">Graduação EAD</h5>
+                    <p class="card-text">De <del>800,00/mês</del> por apenas<br><strong><span style="font-size: 1.9em;">500,00/mês</span></strong><br><small style="font-size: 0.6em;">Preço fixo durante todo o período letivo, desde que o discente não se torne inadimplente e/ou tranque o curso.</small></p>
+                    <br>📆 Inicio Imediato
+                    <br>👨‍🏫 Professores mestre e doutores
+                    <br>⌛ Duração de 
+                    <br>✔️ Autorizado por
+                    <br>
+                    <br>
+                    <div class="text-center">
+                        <a href="https://form.jotform.com/241195390151654" class="button1">Ir para o formulário</a>
+                    </div>
+                    <br>
+                    <br>
+                    <strong>Atenção: </strong><small style="font-size: 0.7em;">Caso seja menor de idade, é necessário que seu responsável legal realize o processo de matrícula junto a você, sob pena de nulidade da inscrição.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function togglePresencial() {
+        document.getElementById("card-body-presencial").style.display = "block";
+        document.getElementById("card-body-ead").style.display = "none";
+    }
+
+    function toggleEAD() {
+        document.getElementById("card-body-presencial").style.display = "none";
+        document.getElementById("card-body-ead").style.display = "block";
+    }
+</script>
