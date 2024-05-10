@@ -867,16 +867,7 @@ body:not(.is-expanded-menu) {
 		
 			<div class="card text-bg-light mb-3" style="max-width: 20rem;">
 				<div class="text-center mb-3">
-					<div class="d-flex justify-content-center">
-						<div class="form-check form-switch me-3">
-							<input class="form-check-input" type="checkbox" id="switchPresencial" onchange="toggleModalidade()">
-							<label class="form-check-label" for="switchPresencial">Presencial</label>
-						</div>
-						<div class="form-check form-switch">
-							<input class="form-check-input" type="checkbox" id="switchEAD" onchange="toggleModalidade()">
-							<label class="form-check-label" for="switchEAD">EAD</label>
-						</div>
-					</div>
+					
 				</div>
 				<div class="card-header text-center">
 					<span>
@@ -884,8 +875,8 @@ body:not(.is-expanded-menu) {
 					</span>
 				</div>
 				<div class="card-body">
-					<h5 class="card-title text-center" id="curso-titulo">Graduação</h5>
-					<p class="card-text" id="curso-info">De <span id="preco_antigo">800,00/mês</span> por apenas<br><strong><span id="preco_novo" style="font-size: 1.9em;">500,00/mês</span></strong><br><small style="font-size: 0.6em;">Preço fixo durante todo o período letivo, desde que o discente não se torne inadimplente e/ou tranque o curso.</small></p>
+					<h5 class="card-title text-center" id="curso-titulo">Graduação EAD</h5>
+					<p class="card-text" id="curso-info">De <span id="preco_antigo">100,00/mês</span> por apenas<br><strong><span id="preco_novo" style="font-size: 1.9em;">48,50/mês</span></strong><br><small style="font-size: 0.6em;">Preço fixo durante todo o período letivo, desde que o discente não se torne inadimplente e/ou tranque o curso.</small></p>
 					<br>📆 Inicio Imediato
 					<br>👨‍🏫 Professores mestre e doutores
 					<br><span id="curso-modalidade">🛜 EAD</span>
@@ -1354,8 +1345,8 @@ body:not(.is-expanded-menu) {
 				precoNovoText.textContent = "1000,00/mês";
 			} else if (!switchPresencial.checked && switchEAD.checked) {
 				modalidadeText.textContent = "🛜 EAD";
-				descontoText.textContent = "50%";
-				precoAntigoText.textContent = "800,00/mês";
+				descontoText.textContent = "51%";
+				precoAntigoText.textContent = "100,00/mês";
 				precoNovoText.textContent = "48,50/mês";
 			} else {
 				// Ambos os switches estão marcados ou nenhum está marcado
