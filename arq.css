@@ -268,3 +268,8 @@ body:not(.is-expanded-menu) {
     background-color: #999; /* substitua #999 pelo código de cor cinza desejado */
 }
 
+.emoji-img {
+    width: 20px; /* ajuste o tamanho conforme necessário */
+    height: 20px; /* ajuste o tamanho conforme necessário */
+}
+
