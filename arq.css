@@ -273,3 +273,83 @@ body:not(.is-expanded-menu) {
     height: 20px; /* ajuste o tamanho conforme necessário */
 }
 
+/* Reset e responsividade */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #004080;
+	padding: 15px 30px;
+	color: white;
+  }
+  
+  .navbar .logo {
+	font-size: 24px;
+	font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+  }
+  
+  .navbar .nav-links li a {
+	color: white;
+	text-decoration: none;
+	transition: color 0.3s;
+  }
+  
+  .navbar .nav-links li a:hover {
+	color: #f0db4f;
+  }
+  
+  /* Carousel */
+  .carousel-container {
+	margin: 30px auto;
+	width: 90%;
+	max-width: 1200px;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .carousel {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+	min-width: 33.33%;
+	transition: transform 0.3s;
+	cursor: pointer;
+  }
+  
+  .carousel-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+  }
+  
+  .carousel-item:hover img {
+	transform: scale(1.1);
+	transition: transform 0.3s;
+  }
+  
+  /* Fixando imagem */
+  .carousel-item.fixed img {
+	transform: scale(1.5);
+	transition: transform 0.3s;
+  }
+  
