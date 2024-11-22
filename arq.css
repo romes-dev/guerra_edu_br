@@ -327,13 +327,12 @@ body:not(.is-expanded-menu) {
   
   .carousel {
 	display: flex;
-	transition: transform 0.5s ease-in-out;
+	gap: 15px;
   }
   
   .carousel-item {
-	min-width: 33.33%;
+	flex: 0 0 33.33%;
 	transition: transform 0.3s;
-	cursor: pointer;
   }
   
   .carousel-item img {
@@ -344,12 +343,6 @@ body:not(.is-expanded-menu) {
   
   .carousel-item:hover img {
 	transform: scale(1.1);
-	transition: transform 0.3s;
-  }
-  
-  /* Fixando imagem */
-  .carousel-item.fixed img {
-	transform: scale(1.5);
 	transition: transform 0.3s;
   }
   
