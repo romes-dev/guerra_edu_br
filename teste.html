@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Faculdade</title>
+    <title>Navbar Moderna</title>
     <style>
+        /* Reset básico */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9; /* Cor de fundo leve */
         }
 
+        /* Estilo da Navbar */
         .navbar {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: #b22222; /* Vermelho */
-            padding: 10px 20px;
-            color: white;
+            background: linear-gradient(90deg, #d32f2f, #b71c1c); /* Vermelho degradê */
+            padding: 15px 30px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
         }
 
+        /* Logo ou Nome */
         .navbar .logo {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: bold;
             color: white;
             text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
+        /* Menu */
         .navbar ul {
             list-style: none;
             display: flex;
@@ -34,24 +41,69 @@
         }
 
         .navbar ul li {
-            margin: 0 15px;
+            margin: 0 20px;
         }
 
         .navbar ul li a {
             text-decoration: none;
             color: white;
-            font-size: 16px;
-            transition: color 0.3s;
+            font-size: 18px;
+            font-weight: 500;
+            position: relative;
+            padding: 5px 0;
+            transition: all 0.3s ease;
         }
 
+        /* Efeito de destaque nos links */
+        .navbar ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background-color: #fdd835; /* Amarelo */
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .navbar ul li a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        /* Efeito ao passar o mouse */
         .navbar ul li a:hover {
-            color: #f0e68c; /* Amarelo claro ao passar o mouse */
+            color: #fdd835; /* Amarelo */
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .navbar ul li a {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
+        <!-- Logo ou Nome -->
         <a href="#" class="logo">Faculdade Guerra</a>
+        <!-- Menu -->
         <ul>
             <li><a href="#rematricula">Rematrícula</a></li>
             <li><a href="#sou-aluno">Sou Aluno</a></li>
